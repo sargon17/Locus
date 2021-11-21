@@ -1,0 +1,315 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #404242;
+}
+html{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+body{
+    width: 90vw;
+    max-width: 1500px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    padding: 1rem;
+}
+a:hover{
+    color: #5ba9a5;
+}
+button{
+    background-color: #5ba9a5;
+    color: #fff;
+    padding: 0.75rem 2.25rem;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #486958;
+}
+h1{
+    font-size: 70px;
+    font-weight: bolder;
+}
+h2{
+    font-weight: bold;
+    font-size: 40px;
+}
+h3{
+    font-weight: bold;
+    font-size: 40px;
+    color: #58a9a5;
+}
+nav{
+    margin-top: 30px;
+}
+p{
+    font-size: 30px;
+}
+
+.flex{
+    display: flex;
+}
+.centered__betwen{
+    justify-content: space-between;
+    align-content: center;
+}
+.centered__center{
+    justify-content: center;
+    align-content: center;
+}
+.logo{
+    margin: auto;
+}
+.no__padding{
+    padding: 0%;
+}
+.btn__ang{
+    border-bottom-left-radius: 0px;
+}
+.column{
+    flex-direction: column;
+}
+.overflow{
+    overflow: hidden;
+}
+.p__green{
+    color: #486958;
+    font-size: 20px;
+}
+.a__green{
+    font-size: 20px;
+    font-weight: bold;
+    color: #486958;
+    padding: 0;
+}
+.a__green:hover{
+    text-decoration: underline;
+}
+.project__list{
+    margin-top: 100px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.main__zone__text{
+    width: 50vw;
+}
+.main__zone__img{
+    width: 50vw;
+    
+}
+.How_it_work_box{
+    background-color: #CCF0E6;
+    width: 100%;
+    height: 40vh;
+    max-height: 500px;
+    border-radius: 15px;
+}
+.mission__section{
+    width: 100%;
+    padding: 5%;
+    max-height: 500px;
+}
+.project__section{
+    width: 100%;
+}
+.project__list{
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.project__card{
+    min-width: 300px;
+    max-width: 350px;
+    margin: 0 20px;
+}
+.project__card h3{
+    margin: 10px 0;
+}
+.project__card p{
+    color: #486958;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.1rem;
+    margin: 20px 0;
+}
+.made__projects{
+    background-color: #CCF0E6;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    max-height: 700px;
+}
+.contact__us{
+    margin: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact__head{
+    width: 30vw;
+}
+.made__projects__text{
+    margin: 50px 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+.made__projects__text__top h1,
+.made__projects__text__top p{
+    color: #58A9A5;
+}
+.made__projects__secondary__text p{
+    color: #486958;
+}
+.made__projects__secondary__text cite{
+    color: #58A9A5;
+}
+
+form{
+    padding: 40px;
+    border: #486958 solid 1px;
+    width: 50vw;
+}
+
+form input{
+    height: 90px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    border-bottom: solid 1px #486958;
+}
+
+form input:last-of-type{
+    border-bottom: none;
+}
+form input::placeholder{
+    color: #486958;
+    font-size: 25px;
+    opacity: 1;
+}
+@media screen and (max-width:1540px) {
+    .project__list{
+        display: flex;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+    .project__card{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    body{
+        width: 100%;
+    }
+    .main__zone{
+        background-image: url(/IMG/Main/main_bg_small_screen.png);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+    .main__zone__text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 90%;
+        text-shadow: 0px 0px 22px rgba(0, 0, 0, 0.25);
+    }
+    .main__zone__text h1{
+        text-align: center;
+        color: #fff;
+        font-size: 40px;
+    }
+    .main__zone__text p {
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+    }
+    .main__zone__text button{
+        align-self: center;
+        margin: 50px 0px;
+    }
+    .main__zone__img{
+        display: none;
+    }
+    .main__zone__img img{
+        display: none;
+    }
+    .How_it_work{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .How_it_work_box{
+        width: 90vw;
+        margin: auto;
+    }
+    .testimonials{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 100px 0;
+    }
+    .contact__us{
+
+        margin: 100px 5%;
+        display: block;
+    }
+    .contact__head{
+        width: 100%;
+    }
+    form{
+        width: 70vw;
+    }
+    
+}
+@media screen and (max-width: 1100px){
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .made__projects{
+        display: block;
+        background-image: url(/IMG/Main/Busines_woman_bg_black.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+    }
+    .made_projects_photo__wrapper{
+        display: none;
+    }
+    .made__projects__text{
+        margin: 50px;
+        width: auto;
+    }
+    .made__projects__text__top h1,
+    .made__projects__text__top p,
+    .made__projects__secondary__text p,
+    .made__projects__secondary__text cite{
+        text-align: center;
+        color: #fff;
+        text-shadow: 0px 0px 22px rgba(0, 0, 0, 0.25);
+    }
+
+}
